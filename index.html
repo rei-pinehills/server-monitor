@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Server Status Monitor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>🖥️ Server Status Monitor</h1>
+            <p class="subtitle">Availability - Is the service up and running?</p>
+        <div id="controls">
+            <button onclick="checkAll()">Check All</button>
+            <span id="last-checked"></span>
+        </div>
+
+        <div id="server-list">
+            <div class="server-card" id="card-google">
+                <div class="server-name">google.com</div>
+                <div class="server-status pending">Pending...</div>
+            </div>
+            <div class="server-card" id="card-github">
+                <div class="server-name">github.com</div>
+                <div class="server-status pending">Pending...</div>
+            </div>
+            <div class="server-card" id="card-cloudflare">
+                <div class="server-name">cloudflare.com</div>
+                <div class="server-status pending">Pending</div>
+            </div>
+            <div class="server-card" id="card-fake">
+                <div class="server-name">fake-server-xyz.com</div>
+                <div class="server-status pending">Pending...</div>
+            </div>
+        </div>
+        <div id="info-box">
+            <p>🔐 <strong>Availability</strong>is the "A" in the CIA Triad. It ensures that services are accessible to authorized users when neeed. Downtime = loss of availability.</p>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
